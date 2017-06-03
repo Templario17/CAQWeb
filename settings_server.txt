@@ -1,0 +1,10 @@
+# configuracion del server apache2:
+crear virtual hosts
+> cd /etc/apache2/sites-avaliable
+ crear archivo de configuracion : name_host.conf
+## habilitar el virual_host 
+>a2ensite (name_hosts.conf)
+## reiniciar el apache2
+## configuracion del dominio local 
+> echo "127.0.0.1 nombre_host.local">> /etc/hosts
+
