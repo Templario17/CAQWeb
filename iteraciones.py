@@ -51,7 +51,7 @@ bajos = {
     12:'Se considera tan apto, confiable y agradable como la mayoria'
 }
 num = range(0,12)
-archivo = "informeCAQ.docx"
+archivo = "informeCAQ.pdf"
 for n in num:
     if resultados[n] >= 4 and resultados[n]<= 7:
         s = resultados[n]
@@ -73,7 +73,17 @@ for n in num:
             arch = f.write(resultado_2)
             
 #guardar en archivo de texto
- 
+#import matplotlib.pyplot as plt
+
+#fig = plt.figure()
+#plt.axis([0, 10, 0, 10])
+#t = resultado
+#t_2 = resultado_1
+#plt.title('DESCRIPCION PRUEBA CAQ') 
+#plt.text(5, 9, s=t, fontsize=7, style='oblique', ha='right',
+#         va='top')
+#plt.text(5, 8, s=t_2, fontsize=7, style='oblique', ha='right')
+#plt.savefig("test", format='pdf')
     
  
  
